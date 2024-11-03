@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teka-Teki Silang</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #d3cce3, #cbb4d4, #b79fd9, #a480cf, #d3cce3);
+            background-size: 400% 300%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: gradientAnimation 12s ease infinite;
+            font-family: Arial, sans-serif;
+            padding: 2px;
+            min-height: 100vh;
+        }
+
+        @keyframes gradientAnimation {
+             0% { background-position: 0% 50%; }
+             50% { background-position: 100% 50%; }
+             100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            text-align: center;
+            background: linear-gradient(135deg, #f3e8ff, #dfd8f7);
+            padding: 50px 80px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            width: 150px; 
+            height: auto;
+            margin-bottom: 10px; 
+        }
+
+        .title {
+            font-size: 2.5em;
+            color: #4a00e0;
+            margin-bottom: 30px;
+            background: linear-gradient(to right, #8e2de2, #4a00e0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .description {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .start-button {
+            padding: 15px 30px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+            background-color: #8e2de2;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 10px rgba(142, 45, 226, 0.3);
+        }
+
+        .start-button:hover {
+            background-color: #6a00d1;
+            transform: translateY(-3px);
+        }
+
+        .start-button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="logo.png" alt="Logo Teka-Teki Silang keluarga" class="logo">
+        <h1 class="title">Teka-Teki Silang keluarga</h1>
+        <button class="start-button" onclick="window.location.href='index2.html'">Mulai Permainan</button>
+        <h3>Made by : Galang Dwiwana Thabrani</h3>
+        <h3>NIM : 1227050048</h3>
+    </div>
+
+</body>
+</html>

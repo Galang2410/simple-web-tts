@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teka Teki Silang</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="game">
+            <h1>Teka-Teki Silang</h1>
+            <div id="crossword">
+                <table>
+                    <tbody id="crossword-grid"></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="questions">
+            <div class="question-section">
+                <h3>Pertanyaan Mendatar:</h3>
+                <ul id="horizontal-questions"></ul>
+            </div>
+            <div class="question-section">
+                <h3>Pertanyaan Menurun:</h3>
+                <ul id="vertical-questions"></ul>
+            </div>
+            <button onclick="checkAnswers()">Cek Jawaban</button>
+            <button onclick="showAnswers()">Lihat Jawaban</button> 
+            <p id="score"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
